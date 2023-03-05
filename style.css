@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 8rem ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.container{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.hero{
+    background-color: antiquewhite;
+}
+
+.hero .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4.6rem;
+    justify-items: end;
+    align-items: center;
+}
+
+.hero-title h1{
+    font-size: 52px;
+    margin: 0;
+    line-height: 1.5;
+}
+.hero-description{
+    margin: 2em 0;
+}
+.hero-text a,a:visited{
+    text-decoration: none;
+    color: #000;
+}
+.hero-text .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 140px;
+
+    background-color: #e02c6d;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1rem 1.8rem;
+    border-radius: 4em;
+    transition: all 0.1s ease-in;
+}
+
+.hero-text .btn:hover {
+    color: #e02c6d;
+    width: 145px;
+    background-color: #fff;
+    border: 2px solid #e02c6d;
+}
+.hero-img{
+    background-image: url(images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
