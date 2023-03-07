@@ -286,7 +286,7 @@ Media Query
 
 
 /* FOr smaller devices */
-@media only screen and (max-width: 515px) {
+@media only screen and (max-width: 576px) {
 
     header{
         text-align: center;
