@@ -3,24 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-header{
-    height: 8rem ;
+header {
+    height: 8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
-header .container h2{
+
+header .container h2 {
     font-weight: 600;
 }
 
-.container{
+.container {
     width: 80%;
     /* background-color: rgb(255, 255, 255); */
     max-width: 80rem;
@@ -28,32 +29,36 @@ header .container h2{
     background-color: #fff;
 }
 
-.hero{
+/* .hero{
     background-color: antiquewhite;
-}
+} */
 
-.hero .container{
+.hero .container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 4.6rem;
     justify-items: end;
     align-items: center;
 }
 
-.hero-title h1{
+.hero-title h1 {
     font-size: 52px;
     font-weight: 700;
     margin: 0;
     line-height: 1.5;
 }
-.hero-description{
+
+.hero-description {
     margin: 2em 0;
 }
-.hero-text a,a:visited{
+
+.hero-text a,
+a:visited {
     text-decoration: none;
     color: #000;
 }
-.hero-text .btn{
+
+.hero-text .btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,11 +79,12 @@ header .container h2{
     background-color: #fff;
     border: 2px solid #e02c6d;
 }
-.hero-img{
+
+.hero-img {
     background-image: url(images/Circle\ design.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
 /* Top Banner style Ends */
@@ -86,77 +92,88 @@ header .container h2{
 
 /* Second section style starts*/
 
-.product-list{
+.product-list {
     margin: 7em 0;
 }
-.product-list h3{
+
+.product-list h3 {
     text-align: center;
     font-size: 28px;
     font-weight: 600;
-    margin-bottom:2.4em ;
+    margin-bottom: 2.4em;
 }
 
-.products{
+.products {
     margin: 3em 0rem;
     display: grid;
     column-gap: 3em;
     row-gap: 3em;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }
-.product{
+
+.product {
     background-color: white;
     padding: 1.6em;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.192);
     border-radius: 5px;
 }
-.product .product-img img{
+
+.product .product-img img {
     width: 100%;
 }
 
-.product-title{
+.product-title {
     font-size: 28px;
     font-weight: 600;
     line-height: 1.5;
     margin-top: 1rem;
 }
-.product-price{
+
+.product-price {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.5;
-    margin-top:0.6rem ;
+    margin-top: 0.6rem;
 }
-.product-rating{
+
+.product-rating {
     display: flex;
     align-items: center;
     /* justify-content: space-evenly; */
 }
-.rating-icons{
+
+.rating-icons {
     display: flex;
     justify-content: center;
-    color:#fb8200 ;
+    color: #fb8200;
     font-size: 14px;
     gap: 0.6rem;
 }
-.ratings{
+
+.ratings {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.6;
     color: gray;
     margin: 0.5rem 0.8rem;
 }
-.product-details{
+
+.product-details {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.4;
     width: 70%;
     color: gray;
 }
-.btn-next,.btn-next:link,.btn-next:visited{
+
+.btn-next,
+.btn-next:link,
+.btn-next:visited {
     font-weight: 700;
     grid-column: 1/-1;
     display: block;
- 
+
     text-align: right;
     color: #e02c6d;
     text-decoration: none;
@@ -164,7 +181,7 @@ header .container h2{
 
 /* newsletter */
 
-.newsletter{
+.newsletter {
     text-align: center;
     margin: 2.6rem 0;
 }
@@ -176,14 +193,15 @@ header .container h2{
     margin-bottom: 2.4rem;
 }
 
-.newsletter .email-input{
+.newsletter .email-input {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 24px;
-    align-items: stretch ;
+    align-items: stretch;
 }
-.newsletter a{
+
+.newsletter a {
     text-decoration: none;
 }
 
@@ -202,9 +220,121 @@ header .container h2{
     /* border-radius: 4em; */
     transition: all 0.1s ease-in;
 }
+
 .newsletter .btn:hover {
     color: #e02c6d;
     width: 145px;
     background-color: #fff;
     border: 2px solid #e02c6d;
+}
+
+
+/* -------------
+    footer
+---------------- */
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #0a0826;
+    color: #fff;
+}
+
+footer h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0.5;
+    /* padding-bottom: 0.4rem; */
+}
+
+footer p {
+    color: gray;
+    font-size: 14px;
+    line-height: 0.5;
+    font-weight: 700;
+    /* padding: 0.4rem 0rem; */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links i {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 63, 63);
+    border-radius: 50%;
+}
+
+
+/* ---------------------
+Media Query 
+------------------------ */
+
+
+/* FOr smaller devices */
+@media only screen and (max-width: 515px) {
+
+    header{
+        text-align: center;
+    }
+    .hero .container {
+        /* background-color: #e02c6d; */
+        /* height:auto */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        /* justify-content: center; */
+        text-align: center;
+        row-gap: 24px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .hero-img {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img img {
+        width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        margin-top: 2px;
+
+    }
+
+    .email-input {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        /* gap: 0; */
+    }
 }
